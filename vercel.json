@@ -1,0 +1,12 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "next build",
+  "outputDirectory": "out",
+  "redirects": [
+    {
+      "source": "/about",
+      "destination": "/studio",
+      "permanent": true
+    }
+  ]
+}
