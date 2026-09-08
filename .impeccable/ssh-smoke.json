@@ -1,1 +1,0 @@
-{"title":"SSH smoke","question":"Board reachable?","options":[{"id":"ok","label":"OK","thesis":"Tunnel works","viewport":"smoke","risk":"none"}],"steer":false,"canon":false}

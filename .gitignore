@@ -8,10 +8,13 @@ npm-debug.log*
 .DS_Store
 *.pem
 source-mirror
-.impeccable/questions
-.impeccable/review
-.impeccable/build
-.impeccable/mocks
-
 *.zip
 tsconfig.tsbuildinfo
+
+# AI / design-process authoring (local only — not shipped site source)
+.impeccable/
+.cursor/
+DESIGN.md
+PRODUCT.md
+LAUNCH.md
+scripts/
