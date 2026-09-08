@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Julie",
+    "role": "Architect-Designer",
+    "note": "Environmental Design · 9 years",
+    "photo": "/images/team/02-julie.jpg"
+  },
+  {
+    "name": "Alina",
+    "role": "Architect-Designer",
+    "note": "Environmental Design · 5 years",
+    "photo": "/images/team/03-alina.jpg"
+  },
+  {
+    "name": "Hermann",
+    "role": "Project administrator",
+    "note": "Environmental Design · 4 years",
+    "photo": "/images/team/04-hermann.jpg"
+  },
+  {
+    "name": "Lily",
+    "role": "Architect-Designer",
+    "note": "Environmental Design · 5 years",
+    "photo": "/images/team/05-lily.jpg"
+  },
+  {
+    "name": "Sofia",
+    "role": "Architect-Designer",
+    "note": "Interior Design · 6 years",
+    "photo": "/images/team/06-sofia.jpg"
+  },
+  {
+    "name": "Julie",
+    "role": "Architect-Designer",
+    "note": "Architecture · 5 years",
+    "photo": "/images/team/07-julie.jpg"
+  },
+  {
+    "name": "Ann",
+    "role": "Architect-Designer",
+    "note": "Interiors and Equipment · 7 years",
+    "photo": "/images/team/08-ann.jpg"
+  },
+  {
+    "name": "Alice",
+    "role": "Architect-Designer",
+    "note": "Environmental Design · 5 years",
+    "photo": "/images/team/09-alice.jpg"
+  },
+  {
+    "name": "Ruslan",
+    "role": "Architect-Designer",
+    "note": "Civil engineering · 5 years",
+    "photo": "/images/team/10-ruslan.jpg"
+  },
+  {
+    "name": "Alina",
+    "role": "Architect-Designer",
+    "note": "Architecture · 7 years",
+    "photo": "/images/team/11-alina.jpg"
+  },
+  {
+    "name": "Natalia",
+    "role": "Architect-Designer",
+    "note": "Environmental Design · 7 years",
+    "photo": "/images/team/12-natalia.jpg"
+  },
+  {
+    "name": "Marina",
+    "role": "Architect-Designer",
+    "note": "Architecture · 11 years",
+    "photo": "/images/team/13-marina.jpg"
+  },
+  {
+    "name": "Daria",
+    "role": "Architect-Designer",
+    "note": "Interior Design · 10 years",
+    "photo": "/images/team/14-daria.jpg"
+  }
+]

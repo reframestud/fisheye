@@ -1,0 +1,173 @@
+{
+  "title": "Choose the visual world",
+  "question": "The roll assigned Mineral Sample Ledger. Keep it, take an alternate, re-roll, or take the category standard.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Mineral Sample Ledger",
+      "kicker": "THE ROLL",
+      "lineage": "quarry sample books and stone merchant ledgers",
+      "thesis": "FISHEYE presents as a mineral sample ledger: projects are specimens on warm stone paper; type is inventory caption, never decoration.",
+      "palette": ["#F7F6F3", "#E8E4DC", "#1A1916", "#7A7468"],
+      "materials": ["limestone dust", "rag ledger paper", "hairline rules", "desaturated plates"],
+      "viewport": "Edge-to-edge villa plate on warm bone ground; FISHEYE as inventory mark top-left; one offer line and one solid CTA in a thin bottom caption rail, no stats, no gradient veil.",
+      "risk": "Can feel sparse if plates are timid; luxury here is scale and silence, not ornament.",
+      "raised": [
+        {
+          "from": "challenger-gameboy",
+          "raise": "Exactly four mineral tones lock the system, no fifth marketing accent."
+        },
+        {
+          "from": "challenger-neon",
+          "raise": "One continuous sheet across the site, never broken into floating card islands."
+        },
+        {
+          "from": "challenger-ikebana",
+          "raise": "Charged emptiness between plates is as intentional as the photograph (ma)."
+        },
+        {
+          "from": "challenger-zine",
+          "raise": "Process reads as numbered field notes on the ledger, not feature cards."
+        }
+      ],
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          { "label": "FISHEYE mark", "x": 0, "y": 0, "w": 3, "h": 1, "accent": true },
+          { "label": "nav", "x": 7, "y": 0, "w": 5, "h": 1 },
+          { "label": "full-bleed plate", "x": 0, "y": 1, "w": 12, "h": 7, "accent": true },
+          { "label": "offer + CTA rail", "x": 0, "y": 8, "w": 12, "h": 2, "accent": true }
+        ]
+      },
+      "comp": ".impeccable/mocks/decision/assigned.webp"
+    },
+    {
+      "id": "model-pick",
+      "label": "Architectural Monograph",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "bound architectural plate books",
+      "thesis": "The studio site is a bound architectural monograph, one photograph owns the spread; type is caption.",
+      "palette": ["#EDEAE4", "#161512", "#7A7468", "#C9C2B4"],
+      "materials": ["cool mineral paper", "full-bleed plates", "caption rails"],
+      "viewport": "Edge-to-edge Marbella villa plate; FISHEYE title-block top-left; offer and CTA in bottom caption rail.",
+      "risk": "Also the direction most luxury-architecture runs land on, familiar and effective.",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          { "label": "title block", "x": 0, "y": 0, "w": 4, "h": 1, "accent": true },
+          { "label": "plate", "x": 0, "y": 1, "w": 12, "h": 7, "accent": true },
+          { "label": "caption rail", "x": 0, "y": 8, "w": 12, "h": 2 }
+        ]
+      },
+      "comp": ".impeccable/mocks/decision/model-pick.webp"
+    },
+    {
+      "id": "challenger-ikebana",
+      "label": "Tokonoma Ma",
+      "verdict": "competitive",
+      "lineage": "ikebana alcove and charged emptiness",
+      "thesis": "Each project hangs in a pale alcove; asymmetry and empty plaster do the selling.",
+      "palette": ["#F4F1EC", "#5C5346", "#2A4A6B", "#1A1916"],
+      "materials": ["pale plaster", "weathered pine line", "bronze vessel dark"],
+      "viewport": "Off-center plate with large charged empty field; primary line is the photograph; CTA as a quiet stem at the base.",
+      "case": "Holds audience identification on luxury restraint; loses narrowly on product clarity for a photo-led Marbella portfolio.",
+      "risk": "Ma can read as unfinished if emptiness is not rigorously composed.",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          { "label": "empty ma", "x": 0, "y": 0, "w": 5, "h": 10 },
+          { "label": "plate", "x": 5, "y": 1, "w": 7, "h": 7, "accent": true },
+          { "label": "stem CTA", "x": 5, "y": 8, "w": 4, "h": 1, "accent": true }
+        ]
+      },
+      "comp": ".impeccable/mocks/decision/challenger-ikebana.webp",
+      "hero": "https://impeccable.style/worlds/cards/growth-metamorphosis-branching-ikebana-ma-arrangement-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/growth-metamorphosis-branching-ikebana-ma-arrangement.webp"
+    },
+    {
+      "id": "challenger-jcard",
+      "label": "Dungeon Tape J-Card",
+      "verdict": "declined",
+      "lineage": "photocopied cassette j-cards",
+      "palette": ["#E8E4DC", "#2A2A2A"],
+      "materials": ["photocopy grain", "one ink weight"],
+      "case": "Fuses poorly: villa owners do not identify with underground tape culture.",
+      "kept": "Single ink-weight discipline, donated as the four-tone lock raise.",
+      "hero": "https://impeccable.style/worlds/cards/posters-covers-sleeves-dungeon-tape-jcard-hero.webp"
+    },
+    {
+      "id": "challenger-gameboy",
+      "label": "Game Boy Field",
+      "verdict": "declined",
+      "lineage": "four-shade Game Boy screens",
+      "palette": ["#9BBC0F", "#0F380F"],
+      "materials": ["8×8 tiles", "dither"],
+      "case": "Loses both axes for luxury residential interiors.",
+      "kept": "Strict limited-palette courage, donated as the four-tone mineral lock.",
+      "hero": "https://impeccable.style/worlds/cards/digital-design-canon-gameboy-four-shade-field-hero.webp"
+    },
+    {
+      "id": "challenger-zine",
+      "label": "Technical Zine",
+      "verdict": "declined",
+      "lineage": "hand-drawn explainer zines",
+      "palette": ["#F5F0E6", "#111111", "#F5E06B"],
+      "materials": ["marker ink", "highlighter"],
+      "case": "Clarity of teaching is real; the marker vernacular fights premium architecture.",
+      "kept": "Process as numbered teaching notes, donated to the ledger field-notes raise.",
+      "hero": "https://impeccable.style/worlds/cards/hand-drawn-zine-explainer-hero.webp"
+    },
+    {
+      "id": "challenger-scope",
+      "label": "Oscilloscope Bench",
+      "verdict": "declined",
+      "lineage": "CRT signal benches",
+      "palette": ["#0A0F0A", "#33FF66"],
+      "materials": ["phosphor", "graticule"],
+      "case": "Instrument clarity does not map to Marbella villa photography.",
+      "kept": "Everything measured against a modular grid.",
+      "hero": "https://impeccable.style/worlds/cards/scientific-notation-oscilloscope-signal-bench-hero.webp"
+    },
+    {
+      "id": "challenger-neon",
+      "label": "Hand-Bent Neon",
+      "verdict": "declined",
+      "lineage": "glass neon circuits",
+      "palette": ["#0A0A12", "#2B4CFF", "#C44"],
+      "materials": ["glass tube", "gas glow"],
+      "case": "Spectacle fights the brief’s mineral restraint.",
+      "kept": "Continuous single-stroke commitment, donated as continuous-sheet raise.",
+      "hero": "https://impeccable.style/worlds/cards/magnetism-electricity-plasma-hand-bent-neon-circuit-hero.webp"
+    }
+  ],
+  "reroll": {
+    "registers": ["safer", "bolder"]
+  },
+  "buildPath": {
+    "value": "code",
+    "toggle": true
+  },
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "What luxury architecture portfolios ship: quiet grid, large photography, understated type, executed at full craft.",
+    "palette": ["#FFFFFF", "#111111", "#8A8680"],
+    "materials": ["clean grid", "project photography", "thin sans"],
+    "viewport": "Centered hero photograph, studio name, short offer, primary CTA, the arrangement visitors expect.",
+    "risk": "Indistinguishable from peer studios by design.",
+    "wireframe": {
+      "cols": 12,
+      "rows": 10,
+      "regions": [
+        { "label": "nav", "x": 0, "y": 0, "w": 12, "h": 1 },
+        { "label": "hero photo", "x": 1, "y": 2, "w": 10, "h": 5, "accent": true },
+        { "label": "offer + CTA", "x": 2, "y": 7, "w": 8, "h": 2 }
+      ]
+    },
+    "comp": ".impeccable/mocks/decision/canon.webp"
+  },
+  "steer": true
+}

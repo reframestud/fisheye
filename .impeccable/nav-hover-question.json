@@ -1,0 +1,56 @@
+{
+  "title": "Header nav link hover",
+  "question": "Desktop header nav links currently fade opacity + lift 2px. Pick one coherent hover (no underlines).",
+  "options": [
+    {
+      "id": "brass-lift",
+      "label": "Brass tint + lift",
+      "kicker": "RECOMMENDED",
+      "thesis": "Ink softens to golden brass (#a67c42) at full opacity with the existing 2px atelier lift.",
+      "palette": [
+        "#fdf9f4",
+        "#000000",
+        "#a67c42"
+      ],
+      "materials": [
+        "color shift",
+        "subtle lift",
+        "no underline"
+      ],
+      "case": "Matches DESIGN motion grammar and the one-accent rule without underlines.",
+      "risk": "Brass on every link hover — keep transitions brief."
+    },
+    {
+      "id": "parchment-wash",
+      "label": "Parchment wash",
+      "thesis": "Soft beige-2 pill behind the label; text stays ink (or slight brass on solid header).",
+      "palette": [
+        "#fdf9f4",
+        "#f3f0e8",
+        "#a67c42"
+      ],
+      "materials": [
+        "background wash",
+        "quiet chrome"
+      ],
+      "case": "Quiet atelier chrome; less accent usage.",
+      "risk": "Can feel button-like next to the Request CTA."
+    },
+    {
+      "id": "brass-only",
+      "label": "Brass color only",
+      "thesis": "Color shifts to brand brass; no translate — opacity settles to 1.",
+      "palette": [
+        "#000000",
+        "#a67c42",
+        "#fdf9f4"
+      ],
+      "materials": [
+        "color only",
+        "reduced motion friendly"
+      ],
+      "case": "Cleanest feedback; drops the DESIGN.md 2px lift.",
+      "risk": "Slightly flatter than the motion system intends."
+    }
+  ]
+}

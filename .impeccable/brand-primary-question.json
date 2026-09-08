@@ -1,0 +1,73 @@
+{
+  "title": "Challenge the golden-brass primary",
+  "question": "FISHEYE’s primary CTA currently uses Golden Brass (#a67c42). On parchment it can read as beige. Pick a replacement primary/accent for buttons — or keep the current brass. All options keep parchment grounds, ink type, and One Accent Rule unless noted.",
+  "steer": true,
+  "options": [
+    {
+      "id": "keep-brass",
+      "label": "Keep Golden Brass",
+      "kicker": "CURRENT",
+      "thesis": "Leave #a67c42 as the sole action color — rarity over novelty.",
+      "palette": ["#a67c42", "#fdf9f4", "#000000", "#f3f0e8"],
+      "materials": ["brass hardware", "parchment", "ink"],
+      "viewport": "Primary buttons stay soft golden brass on parchment and dark bands.",
+      "case": "Safest continuity with The Parchment Atelier; does not address the beige reading.",
+      "risk": "Buttons keep reading warm-beige rather than metallic action."
+    },
+    {
+      "id": "antique-bronze",
+      "label": "Antique Bronze",
+      "kicker": "SAME WORLD",
+      "thesis": "Same metal metaphor, darker and denser so CTAs stop reading as washed beige.",
+      "palette": ["#5c4528", "#fdf9f4", "#000000", "#f3f0e8"],
+      "materials": ["aged bronze", "parchment", "ink"],
+      "viewport": "Primary fill #5c4528 with parchment or near-white label text for contrast.",
+      "case": "Evolves brass without leaving the atelier metal story — most coherent refinement.",
+      "risk": "Still warm-brown family; if you dislike all brown-golds, this may still feel close."
+    },
+    {
+      "id": "ink-action",
+      "label": "Ink Action",
+      "kicker": "EVOLVE",
+      "thesis": "Architectural minimal: primary CTAs go pure ink; color rarity moves to link underlines only or drops.",
+      "palette": ["#000000", "#fdf9f4", "#484847", "#f3f0e8"],
+      "materials": ["ink", "parchment", "stone"],
+      "viewport": "Black primary buttons with parchment text — quiet luxury, no warm fill.",
+      "case": "Strongest fix if the complaint is “beige buttons”; consciously leaves golden brass behind.",
+      "risk": "Less Mediterranean warmth; CTAs compete with body ink unless weight/size stay clear."
+    },
+    {
+      "id": "olive-atelier",
+      "label": "Olive Atelier",
+      "kicker": "MEDITERRANEAN",
+      "thesis": "Deep olive leaf as action — botanical Marbella without terracotta-on-cream cliché.",
+      "palette": ["#3f4a32", "#fdf9f4", "#000000", "#f3f0e8"],
+      "materials": ["olive leaf", "stone", "parchment"],
+      "viewport": "Deep olive primary fill with parchment label; parchment grounds unchanged.",
+      "case": "Fresh accent that still feels Costa del Sol landscape, not tech-purple or hotel gold.",
+      "risk": "Shifts brand metaphor from metal hardware to garden/landscape."
+    },
+    {
+      "id": "costa-slate",
+      "label": "Costa Slate",
+      "kicker": "COASTAL",
+      "thesis": "Cool Mediterranean slate-teal — architectural water and stone, not brass hardware.",
+      "palette": ["#2c3e3a", "#fdf9f4", "#000000", "#f3f0e8"],
+      "materials": ["sea stone", "patina", "parchment"],
+      "viewport": "Slate-teal primary on parchment and dark bands; parchment/near-white label.",
+      "case": "Cooler luxury for interior architecture; clear break from beige-brass.",
+      "risk": "Cooler temperature vs warm parchment — must stay deep enough to avoid spa-teal."
+    },
+    {
+      "id": "oxidized-copper",
+      "label": "Oxidized Copper",
+      "kicker": "MATERIAL",
+      "thesis": "Warm oxidized copper — FF&E metal honesty, richer and redder than beige brass.",
+      "palette": ["#8b4a36", "#fdf9f4", "#000000", "#f3f0e8"],
+      "materials": ["copper", "patina", "parchment"],
+      "viewport": "Copper-red primary fill with parchment label; still One Accent Rule.",
+      "case": "Keeps material/metal story but escapes the gold-beige reading.",
+      "risk": "Near terracotta family — must stay dark and rare so it doesn’t flip into AI cream+clay."
+    }
+  ]
+}

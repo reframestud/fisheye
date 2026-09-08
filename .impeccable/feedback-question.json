@@ -1,0 +1,86 @@
+{
+  "title": "Feedback section, composition",
+  "question": "The roll assigned Single Plate Quote. Lock a structure for the Feedback section (Monograph world stays).",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Single Plate Quote",
+      "kicker": "THE ROLL",
+      "lineage": "One monograph plate owns the spread, visitor advances through client voices",
+      "thesis": "One testimonial at full plate scale: large quote type, caption rail with name/place, previous/next as quiet plate turns.",
+      "palette": ["#EDEAE4", "#161512", "#7A7468"],
+      "materials": ["paper field", "display quote", "caption rail"],
+      "viewport": "Full-width quote as the only voice. Name · place in the bottom rail. Prev / Next as text controls, no cards, no avatar grid.",
+      "risk": "Fewer quotes visible at once; depth beats skim.",
+      "wireframe": {
+        "frame": { "w": 1440, "h": 900 },
+        "regions": [
+          { "id": "title", "x": 80, "y": 80, "w": 400, "h": 48, "label": "Feedback" },
+          { "id": "quote", "x": 80, "y": 220, "w": 1000, "h": 320, "label": "Large quote plate" },
+          { "id": "rail", "x": 80, "y": 720, "w": 1280, "h": 80, "label": "Name · place  |  Prev  Next" }
+        ]
+      },
+      "comp": ".impeccable/mocks/decision/feedback-assigned.webp"
+    },
+    {
+      "id": "dealt-2",
+      "label": "Errata Strip",
+      "kicker": "DEALT",
+      "lineage": "Horizontal errata / caption strip under the section title",
+      "thesis": "Quotes scroll sideways as a continuous caption film, skim many voices without card tiles.",
+      "palette": ["#EDEAE4", "#161512", "#7A7468"],
+      "materials": ["hairline rule", "horizontal measure", "caption type"],
+      "viewport": "Title left. A ruled horizontal track of quotes; drag or arrows. Each panel is text only, no boxes.",
+      "risk": "Horizontal scroll can hide proof on mobile if not well signposted.",
+      "wireframe": {
+        "frame": { "w": 1440, "h": 900 },
+        "regions": [
+          { "id": "title", "x": 80, "y": 100, "w": 360, "h": 48, "label": "Feedback" },
+          { "id": "strip", "x": 80, "y": 280, "w": 1280, "h": 280, "label": "Horizontal quote strip →" }
+        ]
+      },
+      "comp": ".impeccable/mocks/decision/feedback-dealt-2.webp"
+    },
+    {
+      "id": "dealt-6",
+      "label": "Name Index",
+      "kicker": "DEALT",
+      "lineage": "Monograph index, names as entries, quote as the opened page",
+      "thesis": "Left: vertical index of client names. Right: the active quote at reading size. Selection is the interaction.",
+      "palette": ["#EDEAE4", "#161512", "#7A7468"],
+      "materials": ["index column", "active weight shift", "paper field"],
+      "viewport": "Names stacked flush-left. Active name in full ink weight. Quote fills the right field with place as caption.",
+      "risk": "Needs clear keyboard/focus states so it stays operable.",
+      "wireframe": {
+        "frame": { "w": 1440, "h": 900 },
+        "regions": [
+          { "id": "index", "x": 80, "y": 120, "w": 280, "h": 600, "label": "Name index" },
+          { "id": "quote", "x": 420, "y": 200, "w": 900, "h": 400, "label": "Active quote" }
+        ]
+      },
+      "comp": ".impeccable/mocks/decision/feedback-dealt-6.webp"
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "code", "toggle": true },
+  "canon": true,
+  "canonCard": {
+    "label": "Category standard",
+    "thesis": "2×2 testimonial cards with quote + name, the default every studio ships.",
+    "palette": ["#EDEAE4", "#161512", "#7A7468"],
+    "materials": ["equal cards", "quotation marks"],
+    "viewport": "Grid of four identical quote blocks.",
+    "risk": "Indistinguishable from competing Marbella sites.",
+    "wireframe": {
+      "frame": { "w": 1440, "h": 900 },
+      "regions": [
+        { "id": "g1", "x": 80, "y": 200, "w": 600, "h": 240, "label": "Quote card" },
+        { "id": "g2", "x": 760, "y": 200, "w": 600, "h": 240, "label": "Quote card" },
+        { "id": "g3", "x": 80, "y": 500, "w": 600, "h": 240, "label": "Quote card" },
+        { "id": "g4", "x": 760, "y": 500, "w": 600, "h": 240, "label": "Quote card" }
+      ]
+    },
+    "comp": ".impeccable/mocks/decision/feedback-canon.webp"
+  },
+  "steer": true
+}

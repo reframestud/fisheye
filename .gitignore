@@ -1,0 +1,17 @@
+next-env.d.ts
+node_modules
+.NEXT
+.next
+out
+.env*.local
+npm-debug.log*
+.DS_Store
+*.pem
+source-mirror
+.impeccable/questions
+.impeccable/review
+.impeccable/build
+.impeccable/mocks
+
+*.zip
+tsconfig.tsbuildinfo

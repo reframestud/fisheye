@@ -1,0 +1,647 @@
+{
+  "byKind": {
+    "jpeg": 371,
+    "png": 38,
+    "text": 32,
+    "gzip-text": 78,
+    "gzip-other": 17
+  },
+  "badCount": 127,
+  "bad": [
+    {
+      "path": "public/images/home/home-04.jpg",
+      "kind": "text",
+      "size": 42577
+    },
+    {
+      "path": "public/images/home/home-07.jpg",
+      "kind": "gzip-text",
+      "size": 2318
+    },
+    {
+      "path": "public/images/home/home-10.jpg",
+      "kind": "text",
+      "size": 5097
+    },
+    {
+      "path": "public/images/home/home-11.jpg",
+      "kind": "gzip-text",
+      "size": 78003
+    },
+    {
+      "path": "public/images/home/home-12.jpg",
+      "kind": "gzip-other",
+      "size": 38116
+    },
+    {
+      "path": "public/images/home/home-13.jpg",
+      "kind": "gzip-text",
+      "size": 7622
+    },
+    {
+      "path": "public/images/home/home-14.jpg",
+      "kind": "text",
+      "size": 36794
+    },
+    {
+      "path": "public/images/home/home-15.jpg",
+      "kind": "gzip-text",
+      "size": 8011
+    },
+    {
+      "path": "public/images/home/home-16.jpg",
+      "kind": "text",
+      "size": 104293
+    },
+    {
+      "path": "public/images/home/home-17.jpg",
+      "kind": "gzip-text",
+      "size": 3882
+    },
+    {
+      "path": "public/images/home/home-18.jpg",
+      "kind": "gzip-text",
+      "size": 5257
+    },
+    {
+      "path": "public/images/home/home-19.jpg",
+      "kind": "gzip-text",
+      "size": 11097
+    },
+    {
+      "path": "public/images/home/home-20.jpg",
+      "kind": "gzip-other",
+      "size": 8088
+    },
+    {
+      "path": "public/images/home/home-23.jpg",
+      "kind": "gzip-text",
+      "size": 4111
+    },
+    {
+      "path": "public/images/projects/altos-puente-romano-04.jpg",
+      "kind": "text",
+      "size": 38458
+    },
+    {
+      "path": "public/images/projects/altos-puente-romano-05.jpg",
+      "kind": "gzip-text",
+      "size": 2318
+    },
+    {
+      "path": "public/images/projects/altos-puente-romano-06.jpg",
+      "kind": "gzip-text",
+      "size": 2330
+    },
+    {
+      "path": "public/images/projects/altos-puente-romano-07.jpg",
+      "kind": "text",
+      "size": 5097
+    },
+    {
+      "path": "public/images/projects/altos-puente-romano-08.jpg",
+      "kind": "gzip-text",
+      "size": 78003
+    },
+    {
+      "path": "public/images/projects/altos-puente-romano-09.jpg",
+      "kind": "gzip-other",
+      "size": 38116
+    },
+    {
+      "path": "public/images/projects/altos-puente-romano-10.jpg",
+      "kind": "gzip-text",
+      "size": 7622
+    },
+    {
+      "path": "public/images/projects/altos-puente-romano-11.jpg",
+      "kind": "text",
+      "size": 23622
+    },
+    {
+      "path": "public/images/projects/altos-puente-romano-12.jpg",
+      "kind": "gzip-text",
+      "size": 8011
+    },
+    {
+      "path": "public/images/projects/altos-puente-romano-13.jpg",
+      "kind": "gzip-text",
+      "size": 5257
+    },
+    {
+      "path": "public/images/projects/altos-puente-romano-14.jpg",
+      "kind": "gzip-text",
+      "size": 11097
+    },
+    {
+      "path": "public/images/projects/altos-puente-romano-15.jpg",
+      "kind": "gzip-other",
+      "size": 8088
+    },
+    {
+      "path": "public/images/projects/altos-puente-romano-16.jpg",
+      "kind": "gzip-text",
+      "size": 3882
+    },
+    {
+      "path": "public/images/projects/altos-puente-romano-17.jpg",
+      "kind": "text",
+      "size": 35319
+    },
+    {
+      "path": "public/images/projects/altos-puente-romano-18.jpg",
+      "kind": "gzip-text",
+      "size": 4111
+    },
+    {
+      "path": "public/images/projects/altos-puente-romano-31.jpg",
+      "kind": "gzip-text",
+      "size": 3752
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-la-alzambra-04.jpg",
+      "kind": "text",
+      "size": 39863
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-la-alzambra-05.jpg",
+      "kind": "gzip-text",
+      "size": 2318
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-la-alzambra-06.jpg",
+      "kind": "gzip-text",
+      "size": 2330
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-la-alzambra-07.jpg",
+      "kind": "text",
+      "size": 5097
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-la-alzambra-08.jpg",
+      "kind": "gzip-text",
+      "size": 78003
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-la-alzambra-09.jpg",
+      "kind": "gzip-other",
+      "size": 38116
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-la-alzambra-10.jpg",
+      "kind": "gzip-text",
+      "size": 7622
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-la-alzambra-11.jpg",
+      "kind": "text",
+      "size": 23622
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-la-alzambra-12.jpg",
+      "kind": "gzip-text",
+      "size": 8011
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-la-alzambra-13.jpg",
+      "kind": "gzip-text",
+      "size": 5257
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-la-alzambra-14.jpg",
+      "kind": "gzip-text",
+      "size": 11097
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-la-alzambra-15.jpg",
+      "kind": "gzip-other",
+      "size": 8088
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-la-alzambra-16.jpg",
+      "kind": "gzip-text",
+      "size": 3882
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-la-alzambra-17.jpg",
+      "kind": "text",
+      "size": 35319
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-la-alzambra-18.jpg",
+      "kind": "gzip-text",
+      "size": 4111
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-la-alzambra-38.jpg",
+      "kind": "gzip-text",
+      "size": 3752
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-modern-cosiness-04.jpg",
+      "kind": "text",
+      "size": 39863
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-modern-cosiness-05.jpg",
+      "kind": "gzip-text",
+      "size": 2318
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-modern-cosiness-06.jpg",
+      "kind": "gzip-text",
+      "size": 2330
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-modern-cosiness-07.jpg",
+      "kind": "text",
+      "size": 5097
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-modern-cosiness-08.jpg",
+      "kind": "gzip-text",
+      "size": 78003
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-modern-cosiness-09.jpg",
+      "kind": "gzip-other",
+      "size": 38116
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-modern-cosiness-10.jpg",
+      "kind": "gzip-text",
+      "size": 7622
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-modern-cosiness-11.jpg",
+      "kind": "text",
+      "size": 23622
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-modern-cosiness-12.jpg",
+      "kind": "gzip-text",
+      "size": 8011
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-modern-cosiness-13.jpg",
+      "kind": "gzip-text",
+      "size": 5257
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-modern-cosiness-14.jpg",
+      "kind": "gzip-text",
+      "size": 11097
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-modern-cosiness-15.jpg",
+      "kind": "gzip-other",
+      "size": 8088
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-modern-cosiness-16.jpg",
+      "kind": "gzip-text",
+      "size": 3882
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-modern-cosiness-17.jpg",
+      "kind": "text",
+      "size": 35319
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-modern-cosiness-18.jpg",
+      "kind": "gzip-text",
+      "size": 4111
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-modern-cosiness-46.jpg",
+      "kind": "gzip-text",
+      "size": 3752
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-real-de-la-quinta-04.jpg",
+      "kind": "text",
+      "size": 39863
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-real-de-la-quinta-05.jpg",
+      "kind": "gzip-text",
+      "size": 2318
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-real-de-la-quinta-06.jpg",
+      "kind": "gzip-text",
+      "size": 2330
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-real-de-la-quinta-07.jpg",
+      "kind": "text",
+      "size": 5097
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-real-de-la-quinta-08.jpg",
+      "kind": "gzip-text",
+      "size": 78003
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-real-de-la-quinta-09.jpg",
+      "kind": "gzip-other",
+      "size": 38116
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-real-de-la-quinta-10.jpg",
+      "kind": "gzip-text",
+      "size": 7622
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-real-de-la-quinta-11.jpg",
+      "kind": "text",
+      "size": 23622
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-real-de-la-quinta-12.jpg",
+      "kind": "gzip-text",
+      "size": 8011
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-real-de-la-quinta-13.jpg",
+      "kind": "gzip-text",
+      "size": 5257
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-real-de-la-quinta-14.jpg",
+      "kind": "gzip-text",
+      "size": 11097
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-real-de-la-quinta-15.jpg",
+      "kind": "gzip-other",
+      "size": 8088
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-real-de-la-quinta-16.jpg",
+      "kind": "gzip-text",
+      "size": 3882
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-real-de-la-quinta-17.jpg",
+      "kind": "text",
+      "size": 35319
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-real-de-la-quinta-18.jpg",
+      "kind": "gzip-text",
+      "size": 4111
+    },
+    {
+      "path": "public/images/projects/apartment-interior-design-in-marbella-real-de-la-quinta-51.jpg",
+      "kind": "gzip-text",
+      "size": 3752
+    },
+    {
+      "path": "public/images/projects/clinic-interior-design-03.jpg",
+      "kind": "text",
+      "size": 39975
+    },
+    {
+      "path": "public/images/projects/clinic-interior-design-04.jpg",
+      "kind": "gzip-text",
+      "size": 2318
+    },
+    {
+      "path": "public/images/projects/clinic-interior-design-05.jpg",
+      "kind": "gzip-text",
+      "size": 2330
+    },
+    {
+      "path": "public/images/projects/clinic-interior-design-06.jpg",
+      "kind": "text",
+      "size": 5097
+    },
+    {
+      "path": "public/images/projects/clinic-interior-design-07.jpg",
+      "kind": "gzip-text",
+      "size": 78003
+    },
+    {
+      "path": "public/images/projects/clinic-interior-design-08.jpg",
+      "kind": "gzip-other",
+      "size": 38116
+    },
+    {
+      "path": "public/images/projects/clinic-interior-design-09.jpg",
+      "kind": "gzip-text",
+      "size": 7622
+    },
+    {
+      "path": "public/images/projects/clinic-interior-design-10.jpg",
+      "kind": "text",
+      "size": 23622
+    },
+    {
+      "path": "public/images/projects/clinic-interior-design-11.jpg",
+      "kind": "gzip-text",
+      "size": 8011
+    },
+    {
+      "path": "public/images/projects/clinic-interior-design-12.jpg",
+      "kind": "gzip-text",
+      "size": 5257
+    },
+    {
+      "path": "public/images/projects/clinic-interior-design-13.jpg",
+      "kind": "gzip-text",
+      "size": 11097
+    },
+    {
+      "path": "public/images/projects/clinic-interior-design-14.jpg",
+      "kind": "gzip-other",
+      "size": 8088
+    },
+    {
+      "path": "public/images/projects/clinic-interior-design-15.jpg",
+      "kind": "gzip-text",
+      "size": 3882
+    },
+    {
+      "path": "public/images/projects/clinic-interior-design-16.jpg",
+      "kind": "text",
+      "size": 35319
+    },
+    {
+      "path": "public/images/projects/clinic-interior-design-17.jpg",
+      "kind": "gzip-text",
+      "size": 4111
+    },
+    {
+      "path": "public/images/projects/clinic-interior-design-42.jpg",
+      "kind": "gzip-text",
+      "size": 3752
+    },
+    {
+      "path": "public/images/projects/marbesa-04.jpg",
+      "kind": "text",
+      "size": 38458
+    },
+    {
+      "path": "public/images/projects/marbesa-05.jpg",
+      "kind": "gzip-text",
+      "size": 2318
+    },
+    {
+      "path": "public/images/projects/marbesa-06.jpg",
+      "kind": "gzip-text",
+      "size": 2330
+    },
+    {
+      "path": "public/images/projects/marbesa-07.jpg",
+      "kind": "text",
+      "size": 5097
+    },
+    {
+      "path": "public/images/projects/marbesa-08.jpg",
+      "kind": "gzip-text",
+      "size": 78003
+    },
+    {
+      "path": "public/images/projects/marbesa-09.jpg",
+      "kind": "gzip-other",
+      "size": 38116
+    },
+    {
+      "path": "public/images/projects/marbesa-10.jpg",
+      "kind": "gzip-text",
+      "size": 7622
+    },
+    {
+      "path": "public/images/projects/marbesa-11.jpg",
+      "kind": "text",
+      "size": 23622
+    },
+    {
+      "path": "public/images/projects/marbesa-12.jpg",
+      "kind": "gzip-text",
+      "size": 8011
+    },
+    {
+      "path": "public/images/projects/marbesa-13.jpg",
+      "kind": "gzip-text",
+      "size": 5257
+    },
+    {
+      "path": "public/images/projects/marbesa-14.jpg",
+      "kind": "gzip-text",
+      "size": 11097
+    },
+    {
+      "path": "public/images/projects/marbesa-15.jpg",
+      "kind": "gzip-other",
+      "size": 8088
+    },
+    {
+      "path": "public/images/projects/marbesa-16.jpg",
+      "kind": "gzip-text",
+      "size": 3882
+    },
+    {
+      "path": "public/images/projects/marbesa-17.jpg",
+      "kind": "text",
+      "size": 35319
+    },
+    {
+      "path": "public/images/projects/marbesa-18.jpg",
+      "kind": "gzip-text",
+      "size": 4111
+    },
+    {
+      "path": "public/images/projects/marbesa-34.jpg",
+      "kind": "gzip-text",
+      "size": 3752
+    },
+    {
+      "path": "public/images/projects/private-house-interior-design-in-malaga-miradores-del-sol-03.jpg",
+      "kind": "text",
+      "size": 42969
+    },
+    {
+      "path": "public/images/projects/private-house-interior-design-in-malaga-miradores-del-sol-04.jpg",
+      "kind": "gzip-text",
+      "size": 2318
+    },
+    {
+      "path": "public/images/projects/private-house-interior-design-in-malaga-miradores-del-sol-05.jpg",
+      "kind": "gzip-text",
+      "size": 2330
+    },
+    {
+      "path": "public/images/projects/private-house-interior-design-in-malaga-miradores-del-sol-06.jpg",
+      "kind": "text",
+      "size": 5097
+    },
+    {
+      "path": "public/images/projects/private-house-interior-design-in-malaga-miradores-del-sol-07.jpg",
+      "kind": "gzip-text",
+      "size": 78003
+    },
+    {
+      "path": "public/images/projects/private-house-interior-design-in-malaga-miradores-del-sol-08.jpg",
+      "kind": "gzip-other",
+      "size": 38116
+    },
+    {
+      "path": "public/images/projects/private-house-interior-design-in-malaga-miradores-del-sol-09.jpg",
+      "kind": "gzip-text",
+      "size": 7622
+    },
+    {
+      "path": "public/images/projects/private-house-interior-design-in-malaga-miradores-del-sol-10.jpg",
+      "kind": "text",
+      "size": 28806
+    },
+    {
+      "path": "public/images/projects/private-house-interior-design-in-malaga-miradores-del-sol-11.jpg",
+      "kind": "gzip-text",
+      "size": 8011
+    },
+    {
+      "path": "public/images/projects/private-house-interior-design-in-malaga-miradores-del-sol-12.jpg",
+      "kind": "gzip-text",
+      "size": 5257
+    },
+    {
+      "path": "public/images/projects/private-house-interior-design-in-malaga-miradores-del-sol-13.jpg",
+      "kind": "gzip-text",
+      "size": 11097
+    },
+    {
+      "path": "public/images/projects/private-house-interior-design-in-malaga-miradores-del-sol-14.jpg",
+      "kind": "gzip-other",
+      "size": 8088
+    },
+    {
+      "path": "public/images/projects/private-house-interior-design-in-malaga-miradores-del-sol-15.jpg",
+      "kind": "gzip-other",
+      "size": 10182
+    },
+    {
+      "path": "public/images/projects/private-house-interior-design-in-malaga-miradores-del-sol-16.jpg",
+      "kind": "gzip-text",
+      "size": 3882
+    },
+    {
+      "path": "public/images/projects/private-house-interior-design-in-malaga-miradores-del-sol-17.jpg",
+      "kind": "text",
+      "size": 35319
+    },
+    {
+      "path": "public/images/projects/private-house-interior-design-in-malaga-miradores-del-sol-18.jpg",
+      "kind": "gzip-text",
+      "size": 4111
+    },
+    {
+      "path": "public/images/projects/private-house-interior-design-in-malaga-miradores-del-sol-46.jpg",
+      "kind": "gzip-text",
+      "size": 3752
+    }
+  ]
+}

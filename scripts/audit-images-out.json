@@ -1,0 +1,91 @@
+﻿{
+  "projects": 22,
+  "okCount": 347,
+  "missingCount": 0,
+  "missing": [],
+  "codeMissingCount": 0,
+  "codeMissing": [],
+  "largest20": [
+    {
+      "path": "/images/projects/private-house-interior-design-in-malaga-miradores-del-sol-23.jpg",
+      "mb": 0.87
+    },
+    {
+      "path": "/images/projects/private-house-interior-design-in-malaga-miradores-del-sol-24.jpg",
+      "mb": 0.68
+    },
+    {
+      "path": "/images/projects/private-house-interior-design-in-malaga-miradores-del-sol-28.jpg",
+      "mb": 0.65
+    },
+    {
+      "path": "/images/projects/private-house-interior-design-in-malaga-miradores-del-sol-32.jpg",
+      "mb": 0.6
+    },
+    {
+      "path": "/images/projects/private-house-interior-design-in-malaga-miradores-del-sol-31.jpg",
+      "mb": 0.49
+    },
+    {
+      "path": "/images/projects/private-house-interior-design-in-malaga-miradores-del-sol-35.jpg",
+      "mb": 0.46
+    },
+    {
+      "path": "/images/projects/private-house-interior-design-in-malaga-miradores-del-sol-29.jpg",
+      "mb": 0.44
+    },
+    {
+      "path": "/images/projects/clinic-interior-design-22.jpg",
+      "mb": 0.44
+    },
+    {
+      "path": "/images/projects/private-house-interior-design-in-malaga-miradores-del-sol-34.jpg",
+      "mb": 0.44
+    },
+    {
+      "path": "/images/projects/private-house-interior-design-in-malaga-miradores-del-sol-27.jpg",
+      "mb": 0.43
+    },
+    {
+      "path": "/images/projects/clinic-interior-design-cover.jpg",
+      "mb": 0.43
+    },
+    {
+      "path": "/images/projects/clinic-interior-design-cover.jpg",
+      "mb": 0.43
+    },
+    {
+      "path": "/images/projects/clinic-interior-design-01.jpg",
+      "mb": 0.43
+    },
+    {
+      "path": "/images/projects/clinic-interior-design-33.jpg",
+      "mb": 0.43
+    },
+    {
+      "path": "/images/projects/private-house-interior-design-in-malaga-miradores-del-sol-22.jpg",
+      "mb": 0.43
+    },
+    {
+      "path": "/images/projects/apartment-interior-design-in-marbella-real-de-la-quinta-48.jpg",
+      "mb": 0.42
+    },
+    {
+      "path": "/images/projects/apartment-interior-design-in-marbella-real-de-la-quinta-49.jpg",
+      "mb": 0.41
+    },
+    {
+      "path": "/images/projects/private-house-interior-design-in-malaga-miradores-del-sol-cover.jpg",
+      "mb": 0.4
+    },
+    {
+      "path": "/images/projects/private-house-interior-design-in-malaga-miradores-del-sol-cover.jpg",
+      "mb": 0.4
+    },
+    {
+      "path": "/images/projects/private-house-interior-design-in-malaga-miradores-del-sol-01.jpg",
+      "mb": 0.4
+    }
+  ],
+  "totalOkMb": 61.64
+}

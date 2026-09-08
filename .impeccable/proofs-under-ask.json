@@ -1,0 +1,72 @@
+{
+  "title": "Proofs under the dossier",
+  "question": "Keep the three Design / Supervision / FF&E cards as they are. How should the six commitments (Schedule → Implementation) sit underneath?",
+  "steer": true,
+  "reroll": true,
+  "buildPath": {
+    "value": "code",
+    "toggle": true
+  },
+  "options": [
+    {
+      "id": "single-stack",
+      "label": "Single-stack atelier list",
+      "kicker": "RECOMMENDED",
+      "thesis": "One quiet vertical stack — each proof is a full-measure row, not a 3-column grid. Reading rhythm, not a feature matrix.",
+      "viewport": "Cards unchanged above; below, six ruled rows stacked in the shell with title left and body flowing beside or under.",
+      "materials": ["shell measure", "hairline rows", "Instrument Serif titles", "no grid"],
+      "palette": ["#f3f0e8", "#fdf9f4", "#000000", "#7c7c7c", "#e1dcd9"],
+      "risk": "Longer scroll; needs tight vertical rhythm so it does not feel like another text wall.",
+      "case": "Kills the 2×3 column look you dislike while keeping every factual commitment.",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          { "label": "3 dossier cards", "x": 0, "y": 0, "w": 12, "h": 4, "accent": true },
+          { "label": "proof 1 row", "x": 0, "y": 5, "w": 12, "h": 1, "accent": true },
+          { "label": "proof 2 row", "x": 0, "y": 6, "w": 12, "h": 1 },
+          { "label": "proof 3–6…", "x": 0, "y": 7, "w": 12, "h": 3 }
+        ]
+      }
+    },
+    {
+      "id": "horizontal-strip",
+      "label": "Horizontal proof strip",
+      "thesis": "Six compact proof plates scroll sideways under the cards — same shell-align grammar as the dossier and team row.",
+      "viewport": "Cards stay; a second horizontal track of shorter commitment tiles with title + short body.",
+      "materials": ["shell-aligned track", "snap scroll", "compact tiles"],
+      "palette": ["#f3f0e8", "#000000", "#e3d5ca", "#e1dcd9"],
+      "risk": "Two horizontal tracks can feel repetitive if the second is not clearly smaller.",
+      "case": "Most continuous with the cards you like; commitments become browseable, not a grid.",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          { "label": "3 dossier cards", "x": 0, "y": 0, "w": 12, "h": 5, "accent": true },
+          { "label": "proof A", "x": 0, "y": 6, "w": 3, "h": 3, "accent": true },
+          { "label": "proof B", "x": 3, "y": 6, "w": 3, "h": 3 },
+          { "label": "proof C+", "x": 6, "y": 6, "w": 6, "h": 3 }
+        ]
+      }
+    },
+    {
+      "id": "split-dialogue",
+      "label": "Split dialogue",
+      "thesis": "Left: one short hold line. Right: the six proofs as a single flowing column — Studio dialogue grammar, not a card grid.",
+      "viewport": "Cards above; below a 2-column split with intro on the left and stacked proofs on the right.",
+      "materials": ["split shell", "flowing list", "editorial measure"],
+      "palette": ["#f3f0e8", "#000000", "#484847", "#e1dcd9"],
+      "risk": "Needs a truthful intro line — no invented claims; can feel text-heavy on mobile when stacked.",
+      "case": "Clearest hierarchy: services (photos) vs commitments (words).",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          { "label": "3 dossier cards", "x": 0, "y": 0, "w": 12, "h": 4, "accent": true },
+          { "label": "hold line", "x": 0, "y": 5, "w": 4, "h": 4, "accent": true },
+          { "label": "proofs column", "x": 5, "y": 5, "w": 7, "h": 4 }
+        ]
+      }
+    }
+  ]
+}

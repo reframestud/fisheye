@@ -1,0 +1,621 @@
+@import "tailwindcss";
+
+@theme {
+  --color-beige: #fdf9f4;
+  --color-beige-2: #f3f0e8;
+  --color-ink: #000000;
+  --color-brand: #e3d5ca;
+  --color-grey-200: #e1dcd9;
+  --color-grey-300: #c6c6c6;
+  --color-grey-700: #7c7c7c;
+  --color-grey-800: #484847;
+  --color-white: #ffffff;
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+}
+
+:root {
+  color-scheme: light;
+  --header-h: 4.5rem;
+  --shell-max: 1200px;
+  --site-margin: clamp(1rem, 4vw, 3rem);
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-lift: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-kube: cubic-bezier(0.22, 1, 0.36, 1);
+  /* Atelier Reveal motion tokens */
+  --motion-fast: 150ms;
+  --motion-ui: 240ms;
+  --motion-page: 280ms;
+  --motion-reveal: 1000ms;
+  --motion-hero: 1150ms;
+  --reveal-y: 40px;
+  --reveal-y-lg: 48px;
+}
+
+* {
+  box-sizing: border-box;
+  caret-color: var(--color-ink);
+}
+
+html {
+  scroll-behavior: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-grey-800) var(--color-beige-2);
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+html::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--color-beige-2);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--color-grey-800);
+  border-radius: var(--radius-sm);
+  border: 2px solid var(--color-beige-2);
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: var(--color-ink);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--color-beige);
+  color: var(--color-ink);
+  font-family: var(--font-body), "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: start;
+  word-spacing: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Body copy: never justify — rivers look broken in narrow columns */
+p,
+.measure {
+  text-align: start;
+  word-spacing: normal;
+}
+
+::selection {
+  background: var(--color-ink);
+  color: var(--color-beige);
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22em;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Intrinsic height only for inline content images, not media frames */
+img:not([data-img]) {
+  height: auto;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  border-radius: var(--radius-sm);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 3px;
+}
+
+.font-display {
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 400;
+}
+
+/*
+ * Prefer natural 1–2 line titles over even multi-line stacks.
+ * text-wrap: balance + a skinny max-w-[Nch] forces awkward 3-line titles
+ * (e.g. “Design, supervision, and FF&E”). pretty + title-measure keeps
+ * orphans in check without stacking short phrases.
+ * Pairs with antiOrphan() for last-word widows.
+ */
+h1.font-display,
+h2.font-display,
+h3.font-display {
+  text-wrap: pretty;
+}
+
+/* Shared display-title measures — wide enough for 1–2 lines at section scale */
+.title-measure {
+  max-width: min(100%, 28ch);
+}
+
+.title-measure-sm {
+  max-width: min(100%, 22ch);
+}
+
+.title-measure-lg {
+  max-width: min(100%, 36ch);
+}
+
+/* Homepage offer — atelier dossier horizontal scroll (structure-2) */
+.offer-dossier-track {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 0.5rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.offer-dossier-track::-webkit-scrollbar {
+  display: none;
+}
+
+/* Align first dossier with .shell title inset (wide viewports exceed --site-margin). */
+.offer-dossier-track--shell {
+  --offer-dossier-inset: max(
+    var(--site-margin),
+    calc((100% - var(--shell-max)) / 2)
+  );
+  padding-inline: var(--offer-dossier-inset);
+  scroll-padding-inline: var(--offer-dossier-inset);
+}
+
+.offer-dossier-card {
+  display: flex;
+  flex-direction: column;
+  width: min(78vw, 18.5rem);
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+/* Desktop: three equal columns fill the shell width */
+@media (min-width: 768px) {
+  .offer-dossier-track {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+    overflow: visible;
+    scroll-snap-type: none;
+    padding-bottom: 0;
+  }
+
+  .offer-dossier-track--shell {
+    width: min(100% - (var(--site-margin) * 2), var(--shell-max));
+    margin-inline: auto;
+    padding-inline: 0;
+    scroll-padding-inline: 0;
+  }
+
+  .offer-dossier-card {
+    width: auto;
+    min-width: 0;
+    flex-shrink: 1;
+  }
+}
+
+/* Six operational proofs — smaller horizontal strip under the dossier */
+.offer-proof-strip {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 0.35rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.offer-proof-strip::-webkit-scrollbar {
+  display: none;
+}
+
+.offer-proof-strip--shell {
+  --offer-proof-inset: max(
+    var(--site-margin),
+    calc((100% - var(--shell-max)) / 2)
+  );
+  padding-inline: var(--offer-proof-inset);
+  scroll-padding-inline: var(--offer-proof-inset);
+}
+
+.offer-proof-tile {
+  flex-shrink: 0;
+  width: min(72vw, 15.5rem);
+  scroll-snap-align: start;
+  padding: 1.1rem 1.15rem 1.25rem;
+  border-top: 1px solid var(--color-grey-200);
+  background: color-mix(in srgb, var(--color-beige) 72%, transparent);
+}
+
+@media (min-width: 768px) {
+  .offer-proof-strip {
+    gap: 1.1rem;
+  }
+
+  .offer-proof-tile {
+    width: 14.75rem;
+  }
+}
+
+.label {
+  font-family: var(--font-body), "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-grey-800);
+}
+
+/* Header chrome must follow solid/transparent ink — not form-label grey */
+header .label {
+  color: inherit;
+}
+
+.measure {
+  max-width: 68ch;
+}
+
+.shell {
+  width: min(100% - (var(--site-margin) * 2), var(--shell-max));
+  margin-inline: auto;
+}
+
+.shell-narrow {
+  width: min(100% - (var(--site-margin) * 2), 42rem);
+  margin-inline: auto;
+}
+
+.plate {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  background: var(--color-beige-2);
+}
+
+.plate-tall {
+  aspect-ratio: 4 / 5;
+}
+
+.media-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  background: var(--color-beige-2);
+}
+
+/* Always cover the frame; extra height leaves room for scroll drift.
+   !important beats next/image `fill` inline height:100% so parallax
+   never exposes the plate background. */
+.media-frame img,
+.media-frame [data-img] {
+  position: absolute !important;
+  inset: auto 0 auto 0 !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  max-width: none !important;
+  height: 120% !important;
+  object-fit: cover !important;
+  object-position: center;
+}
+
+.media-frame img,
+.media-frame .plate {
+  transition: transform 0.8s var(--ease-kube);
+}
+
+.group:hover .media-frame img,
+.group:hover .media-frame .plate {
+  transform: scale(1.05);
+}
+
+.rule {
+  border: 0;
+  border-top: 1px solid var(--color-grey-200);
+  margin: 0;
+}
+
+/* Button system — never underline (incl. hover). Variants: primary | secondary | ghost */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  padding: 0.75rem 2rem;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  background-image: none !important;
+  cursor: pointer;
+  transition:
+    transform 220ms var(--ease-lift),
+    filter 220ms var(--ease-out),
+    background-color 200ms var(--ease-out),
+    border-color 200ms var(--ease-out),
+    color 200ms var(--ease-out),
+    opacity 200ms var(--ease-out);
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  text-decoration: none !important;
+  background-image: none !important;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 3px;
+}
+
+.theme-dark .btn:focus-visible,
+[data-solid="false"] .btn:focus-visible {
+  outline-color: var(--color-white);
+}
+
+.btn:active:not(:disabled):not([aria-disabled="true"]) {
+  transform: scale(0.98);
+}
+
+.btn:disabled,
+.btn[aria-disabled="true"] {
+  opacity: 0.45;
+  cursor: not-allowed;
+  pointer-events: none;
+  transform: none;
+  filter: none;
+}
+
+.btn-sm {
+  min-height: 2.25rem;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.6875rem;
+}
+
+.btn-lg {
+  min-height: 3.25rem;
+  padding: 0.9rem 2.35rem;
+}
+
+/* Primary — golden brass fill, ink label (works on parchment + dark bands) */
+.btn-primary {
+  border-color: var(--color-brand);
+  background: var(--color-brand);
+  color: var(--color-ink);
+}
+
+.btn-primary:hover:not(:disabled):not([aria-disabled="true"]) {
+  filter: brightness(0.97);
+  transform: translateY(-2px);
+}
+
+.btn-primary:active:not(:disabled):not([aria-disabled="true"]) {
+  filter: brightness(0.94);
+}
+
+/* Secondary — outline, inherits ink/white from context; no fill at rest */
+.btn-secondary {
+  border-color: currentColor;
+  background: transparent;
+  color: inherit;
+}
+
+.btn-secondary:hover:not(:disabled):not([aria-disabled="true"]) {
+  background: color-mix(in srgb, currentColor 12%, transparent);
+  filter: none;
+  transform: translateY(-2px);
+}
+
+/* Ghost / tertiary — minimal; wash on hover; never underline */
+.btn-ghost {
+  border-color: transparent;
+  background: transparent;
+  color: inherit;
+}
+
+.btn-ghost:hover:not(:disabled):not([aria-disabled="true"]) {
+  background: color-mix(in srgb, currentColor 10%, transparent);
+  filter: none;
+  transform: none;
+}
+
+/* Alias: dark-band CTAs use primary (brass stays brass) */
+.btn-on-dark {
+  border-color: var(--color-brand);
+  background: var(--color-brand);
+  color: var(--color-ink);
+}
+
+.btn-on-dark:hover:not(:disabled):not([aria-disabled="true"]) {
+  filter: brightness(0.97);
+  transform: translateY(-2px);
+}
+
+.link-line {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+  transition: background-image 200ms var(--ease-out), color 200ms var(--ease-out);
+}
+
+.link-line:hover {
+  background-image: linear-gradient(var(--color-brand), var(--color-brand));
+}
+
+/* Header nav links — brass tint + atelier lift; never underline */
+.nav-link {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.75;
+  transition:
+    color var(--motion-ui) var(--ease-out),
+    opacity var(--motion-ui) var(--ease-out),
+    transform var(--motion-ui) var(--ease-lift);
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  color: var(--color-brand);
+  opacity: 1;
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.nav-link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+.field {
+  height: 2.75rem;
+  width: 100%;
+  border: 1px solid var(--color-grey-200);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  padding-inline: 1rem;
+  outline: none;
+  transition:
+    border-color var(--motion-ui) var(--ease-out),
+    background-color var(--motion-ui) var(--ease-out),
+    box-shadow var(--motion-ui) var(--ease-out);
+}
+
+.field:hover {
+  border-color: color-mix(in srgb, var(--color-ink) 28%, var(--color-grey-200));
+}
+
+.field:focus {
+  border-color: var(--color-ink);
+  background: color-mix(in srgb, var(--color-beige-2) 55%, transparent);
+}
+
+.field-area {
+  width: 100%;
+  border: 1px solid var(--color-grey-200);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  padding: 0.85rem 1rem;
+  outline: none;
+  resize: vertical;
+  transition:
+    border-color var(--motion-ui) var(--ease-out),
+    background-color var(--motion-ui) var(--ease-out);
+}
+
+.field-area:hover {
+  border-color: color-mix(in srgb, var(--color-ink) 28%, var(--color-grey-200));
+}
+
+.field-area:focus {
+  border-color: var(--color-ink);
+  background: color-mix(in srgb, var(--color-beige-2) 55%, transparent);
+}
+
+/* Filter chips: pressed state settles without bounce */
+[data-filter-bar] .btn {
+  transition:
+    transform var(--motion-ui) var(--ease-lift),
+    filter var(--motion-ui) var(--ease-out),
+    background-color var(--motion-ui) var(--ease-out),
+    border-color var(--motion-ui) var(--ease-out),
+    color var(--motion-ui) var(--ease-out),
+    opacity var(--motion-ui) var(--ease-out);
+}
+
+[data-filter-bar] .btn[aria-pressed="true"] {
+  transform: translateY(0);
+}
+
+.theme-dark {
+  background: var(--color-ink);
+  color: var(--color-white);
+}
+
+.theme-dark .label {
+  color: var(--color-grey-300);
+}
+
+.section-y {
+  padding-block: clamp(4rem, 10vw, 8rem);
+}
+
+/* Studio team proof row — hide track scrollbar, keep snap scroll */
+.team-proof-track {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* Align first plate with .shell title inset (wide viewports exceed --site-margin). */
+.team-proof-track--shell {
+  --team-proof-inset: max(
+    var(--site-margin),
+    calc((100% - var(--shell-max)) / 2)
+  );
+  padding-inline: var(--team-proof-inset);
+  scroll-padding-inline: var(--team-proof-inset);
+}
+
+.team-proof-track::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .group:hover .media-frame img,
+  .group:hover .media-frame .plate {
+    transform: none;
+  }
+
+  .nav-link:hover,
+  .btn-primary:hover:not(:disabled):not([aria-disabled="true"]),
+  .btn-secondary:hover:not(:disabled):not([aria-disabled="true"]),
+  .btn-on-dark:hover:not(:disabled):not([aria-disabled="true"]),
+  .btn:active:not(:disabled):not([aria-disabled="true"]) {
+    transform: none;
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "title": "Offer cards composition",
+  "question": "Design / Supervision / FF&E become a horizontal scroll of image cards. Lock one presentation (world stays Parchment Atelier).",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Plate-led offer scroll",
+      "kicker": "THE ROLL",
+      "lineage": "TeamProofRow grammar for three services",
+      "thesis": "Three scrubbed plates drift sideways — Design, Supervision, FF&E — each with a quiet caption block under the media.",
+      "palette": ["#fdf9f4", "#f3f0e8", "#000000", "#e3d5ca"],
+      "materials": ["beige-2 band", "media-frame 0.5rem", "Instrument Serif titles", "shell-aligned track"],
+      "viewport": "Section title in shell. Below: full-bleed horizontal track (first card aligned to shell inset) of three cards — aspect plate, then serif title + short Inter body. Six operational proofs sit as a hairline ledger under the track.",
+      "risk": "Reads like a third TeamProofRow if cards stay too narrow and caption-only.",
+      "raised": [
+        {
+          "from": "dossier-raise",
+          "raise": "Cards read wider than team plates so body copy can carry the service promise, not only a name."
+        }
+      ],
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          {"label": "title: Design, supervision, and FF&E", "x": 0, "y": 0, "w": 6, "h": 2, "accent": true},
+          {"label": "card Design (plate+body)", "x": 0, "y": 3, "w": 4, "h": 5},
+          {"label": "card Supervision", "x": 4, "y": 3, "w": 4, "h": 5},
+          {"label": "card FF&E (peek)", "x": 8, "y": 3, "w": 4, "h": 5},
+          {"label": "six proofs ledger", "x": 0, "y": 8, "w": 12, "h": 2}
+        ]
+      }
+    },
+    {
+      "id": "structure-2",
+      "label": "Atelier dossier cards",
+      "lineage": "Taller plates + measured body column",
+      "thesis": "Each service opens like a dossier plate: tall scrubbed photo, then a measured title and body — still one horizontal track.",
+      "palette": ["#fdf9f4", "#f3f0e8", "#000000", "#e3d5ca"],
+      "materials": ["3/4 plates", "grey-200 hairline under title", "quiet Inter"],
+      "viewport": "Shell title. Horizontal track of three tall dossier cards (plate ~3/4). Title + body under each. Six proofs remain as a compact ledger below.",
+      "risk": "Tall cards can feel like team portraits if body stays too short.",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          {"label": "section title", "x": 0, "y": 0, "w": 5, "h": 2, "accent": true},
+          {"label": "tall Design", "x": 0, "y": 2, "w": 3, "h": 6},
+          {"label": "tall Supervision", "x": 3, "y": 2, "w": 3, "h": 6},
+          {"label": "tall FF&E", "x": 6, "y": 2, "w": 3, "h": 6},
+          {"label": "peek next", "x": 9, "y": 2, "w": 3, "h": 6},
+          {"label": "proofs ledger", "x": 0, "y": 8, "w": 12, "h": 2}
+        ]
+      }
+    },
+    {
+      "id": "structure-5",
+      "label": "Service + proof paired",
+      "lineage": "Offer card carries one operational proof",
+      "thesis": "Each card pairs the service plate with one factual proof line drawn from Schedule–Implementation — still three cards, still horizontal.",
+      "palette": ["#fdf9f4", "#f3f0e8", "#000000", "#e3d5ca"],
+      "materials": ["plate", "serif service title", "meta proof label", "hairline"],
+      "viewport": "Title in shell. Three wide cards: plate, Design|Supervision|FF&E title, short body, then one grey meta proof (e.g. Schedule / Team / Budget). Remaining proofs as ledger or folded.",
+      "risk": "Pairing can invent false mappings if proofs are forced onto the wrong service.",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          {"label": "section title", "x": 0, "y": 0, "w": 6, "h": 2, "accent": true},
+          {"label": "Design + Schedule proof", "x": 0, "y": 3, "w": 5, "h": 6},
+          {"label": "Supervision + Team", "x": 5, "y": 3, "w": 5, "h": 6},
+          {"label": "FF&E peek", "x": 10, "y": 3, "w": 2, "h": 6}
+        ]
+      }
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "steer": true,
+  "buildPath": { "value": "code", "toggle": true }
+}

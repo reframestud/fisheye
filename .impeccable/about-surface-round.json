@@ -1,0 +1,153 @@
+{
+  "title": "Studio page composition",
+  "question": "How should the Studio (/about) page be structured? The visual world stays Parchment Atelier — this choice is composition only.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Split Atelier Dialogue",
+      "kicker": "THE ROLL",
+      "thesis": "A continuous studio story on one side; photography and people answer on the other as you scroll.",
+      "palette": ["#fdf9f4", "#f3f0e8", "#000000", "#a67c42"],
+      "materials": ["parchment bands", "scrubbed photo plates", "Instrument Serif display"],
+      "viewport": "After the solid nav: large Studio title left, one-line Marbella/2009 meta; a tall founder plate begins immediately on the right — no card stack, no stats.",
+      "risk": "Can feel like two pages if the columns never meet; the story and plates must share one scroll rhythm.",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          {"label": "Studio title", "x": 0, "y": 0, "w": 6, "h": 2, "accent": true},
+          {"label": "Meta · Marbella", "x": 0, "y": 2, "w": 5, "h": 1},
+          {"label": "Founder plate", "x": 6, "y": 0, "w": 6, "h": 5},
+          {"label": "Story column", "x": 0, "y": 4, "w": 5, "h": 4},
+          {"label": "Team plates", "x": 6, "y": 5, "w": 6, "h": 3},
+          {"label": "Dark CTA", "x": 0, "y": 8, "w": 12, "h": 2, "accent": true}
+        ]
+      },
+      "comp": ".impeccable/mocks/decision/about-assigned.webp"
+    },
+    {
+      "id": "values-ladder",
+      "label": "Values Ladder",
+      "thesis": "Studio beliefs climb a vertical spine; team portraits nest between the rungs as living proof.",
+      "palette": ["#fdf9f4", "#f3f0e8", "#000000", "#a67c42"],
+      "materials": ["numbered spine", "inset portraits", "quiet rules"],
+      "viewport": "Full-width Studio headline, one support line, then the first ladder rung (Schedule/Team belief) with a portrait inset — no hero card grid.",
+      "risk": "Reads like Work scheme if the spine feels too process-heavy; keep it belief, not procedure.",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          {"label": "Studio title", "x": 1, "y": 0, "w": 10, "h": 2, "accent": true},
+          {"label": "Support", "x": 1, "y": 2, "w": 7, "h": 1},
+          {"label": "Rung 01 + plate", "x": 1, "y": 4, "w": 10, "h": 2},
+          {"label": "Rung 02 + plate", "x": 1, "y": 6, "w": 10, "h": 2},
+          {"label": "Dark CTA", "x": 0, "y": 8, "w": 12, "h": 2, "accent": true}
+        ]
+      },
+      "comp": ".impeccable/mocks/decision/about-values-ladder.webp"
+    },
+    {
+      "id": "founder-led",
+      "label": "Founder-Led Atelier",
+      "thesis": "The founder portrait and quote are the first belief; the team and studio story arrive as proof afterward.",
+      "palette": ["#fdf9f4", "#f3f0e8", "#000000", "#a67c42"],
+      "materials": ["4/5 founder plate", "display quote", "team grid after"],
+      "viewport": "Thin Studio wordmark line, then a dominant 4/5 founder plate with name, role, and quote beside — brand calm, person large.",
+      "risk": "Can over-center one person if the team section feels bolted on; keep the handoff to people intentional.",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          {"label": "Studio meta", "x": 0, "y": 0, "w": 4, "h": 1},
+          {"label": "Founder plate", "x": 0, "y": 1, "w": 5, "h": 5, "accent": true},
+          {"label": "Name + quote", "x": 6, "y": 2, "w": 6, "h": 4},
+          {"label": "Studio story", "x": 0, "y": 6, "w": 12, "h": 1},
+          {"label": "Team strip", "x": 0, "y": 7, "w": 12, "h": 1},
+          {"label": "Dark CTA", "x": 0, "y": 8, "w": 12, "h": 2, "accent": true}
+        ]
+      },
+      "comp": ".impeccable/mocks/decision/about-founder-led.webp"
+    },
+    {
+      "id": "challenger-plate-annual",
+      "label": "Plate Section Credits",
+      "verdict": "competitive",
+      "thesis": "Team as a design-annual plate section: registration corners, credit rows, one continuous sheet of people.",
+      "palette": ["#fdf9f4", "#f3f0e8", "#000000", "#a67c42"],
+      "materials": ["hairline rules", "plate crosshairs", "credit rows"],
+      "viewport": "Studio title as plate header; first team plate with corner marks and a credit row under — story deferred below the fold.",
+      "case": "Strong craft clarity for a design studio; loses narrowly because villa owners need the studio story before a credits sheet.",
+      "risk": "Can feel too graphic-design-insider if registration furniture overpowers warmth.",
+      "hero": "https://impeccable.style/worlds/cards/design-annual-s-plate-section-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/design-annual-s-plate-section.webp",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          {"label": "Plate header", "x": 0, "y": 0, "w": 12, "h": 1},
+          {"label": "Plate 01", "x": 0, "y": 1, "w": 6, "h": 4, "accent": true},
+          {"label": "Plate 02", "x": 6, "y": 1, "w": 6, "h": 4},
+          {"label": "Credits row", "x": 0, "y": 5, "w": 12, "h": 1},
+          {"label": "Studio story", "x": 0, "y": 6, "w": 12, "h": 2},
+          {"label": "Dark CTA", "x": 0, "y": 8, "w": 12, "h": 2, "accent": true}
+        ]
+      },
+      "comp": ".impeccable/mocks/decision/about-challenger-plate.webp"
+    },
+    {
+      "id": "challenger-orizuru",
+      "label": "Fold Sequence Story",
+      "verdict": "competitive",
+      "thesis": "The studio story unfolds in discrete creases — each fold reveals belief, founder, then people.",
+      "palette": ["#fdf9f4", "#f3f0e8", "#000000", "#a67c42"],
+      "materials": ["numbered folds", "step markers", "progressive reveal"],
+      "viewport": "Fold 01 marker + one large typographic crease (process clarity claim); no photo until fold 02.",
+      "case": "Donates sequential commitment; loses on audience ID — villa owners want people and place sooner.",
+      "risk": "Collides with Work scheme’s step spine if numbering feels procedural.",
+      "hero": "https://impeccable.style/worlds/cards/paper-folds-pleats-deployable-orizuru-crane-sequence-hero.webp",
+      "kept": "Discrete recoverable steps with one active crease.",
+      "wireframe": {
+        "cols": 12,
+        "rows": 10,
+        "regions": [
+          {"label": "Fold 01 claim", "x": 1, "y": 0, "w": 10, "h": 3, "accent": true},
+          {"label": "Fold 02 founder", "x": 1, "y": 3, "w": 10, "h": 3},
+          {"label": "Fold 03 team", "x": 1, "y": 6, "w": 10, "h": 2},
+          {"label": "Dark CTA", "x": 0, "y": 8, "w": 12, "h": 2, "accent": true}
+        ]
+      },
+      "comp": ".impeccable/mocks/decision/about-challenger-fold.webp"
+    },
+    {
+      "id": "challenger-glaze",
+      "label": "Glaze Shelf Row",
+      "verdict": "declined",
+      "thesis": "People as kiln samples in one shelf row — gravity sets reading order.",
+      "palette": ["#fdf9f4", "#000000", "#a67c42"],
+      "materials": ["shelf row", "pooled accent"],
+      "case": "Fuses poorly: villa owners do not identify with kiln-shelf comparison.",
+      "kept": "One horizontal proof row with gravity-led hierarchy.",
+      "hero": "https://impeccable.style/worlds/cards/clay-ceramics-fracture-glaze-river-shelf-hero.webp",
+      "viewport": "A single horizontal row of team plates as samples.",
+      "risk": "Commodity shelf, not atelier.",
+      "wireframe": {
+        "cols": 12,
+        "rows": 8,
+        "regions": [
+          {"label": "Title", "x": 0, "y": 0, "w": 12, "h": 2},
+          {"label": "Shelf row", "x": 0, "y": 3, "w": 12, "h": 3, "accent": true},
+          {"label": "CTA", "x": 0, "y": 6, "w": 12, "h": 2}
+        ]
+      },
+      "comp": ".impeccable/mocks/decision/about-challenger-glaze.webp"
+    }
+  ],
+  "reroll": {
+    "registers": ["safer", "bolder"]
+  },
+  "steer": true,
+  "buildPath": {
+    "value": "code",
+    "toggle": true
+  }
+}
