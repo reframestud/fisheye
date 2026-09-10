@@ -575,8 +575,23 @@ header .label {
 
 /* Studio team proof row — hide track scrollbar, keep snap scroll */
 .team-proof-track {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  cursor: grab;
+}
+
+.team-proof-track.is-dragging {
+  cursor: grabbing;
+  scroll-snap-type: none;
+  user-select: none;
+}
+
+.team-proof-track img {
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
 /* Align first plate with .shell title inset (wide viewports exceed --site-margin). */

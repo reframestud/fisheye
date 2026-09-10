@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { HorizontalTrack } from "@/components/HorizontalTrack";
 import { team } from "@/content/site";
 import { antiOrphan } from "@/lib/typography";
 
@@ -29,10 +30,11 @@ export function TeamProofRow({
         </h2>
       </div>
 
-      <div
-        className="team-proof-track team-proof-track--shell flex snap-x snap-mandatory gap-4 overflow-x-auto overscroll-x-contain pb-2 md:gap-5"
+      <HorizontalTrack
+        className="team-proof-track team-proof-track--shell flex snap-x snap-proximity gap-4 overflow-x-auto overscroll-x-contain pb-2 md:gap-5"
         data-reveal-group
         role="list"
+        aria-labelledby="team-proof-heading"
       >
         {team.map((person, index) => (
           <figure
@@ -66,7 +68,7 @@ export function TeamProofRow({
             </figcaption>
           </figure>
         ))}
-      </div>
+      </HorizontalTrack>
     </section>
   );
 }

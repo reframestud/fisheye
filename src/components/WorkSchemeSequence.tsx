@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { HorizontalTrack } from "@/components/HorizontalTrack";
 import { antiOrphan } from "@/lib/typography";
 import { cn } from "@/lib/cn";
 
@@ -131,7 +132,7 @@ export function WorkSchemeSequence({ steps }: WorkSchemeSequenceProps) {
                 data-reveal-group
                 aria-label={`${step.title} proof plates`}
               >
-                <div className="team-proof-track flex snap-x snap-mandatory gap-4 overflow-x-auto overscroll-x-contain px-[var(--site-margin)] pb-2 md:gap-5">
+                <HorizontalTrack className="team-proof-track flex snap-x snap-proximity gap-4 overflow-x-auto overscroll-x-contain px-[var(--site-margin)] pb-2 md:gap-5">
                   {gallery.map((item, gIndex) => (
                     <figure
                       key={`${item.src}-${gIndex}`}
@@ -159,7 +160,7 @@ export function WorkSchemeSequence({ steps }: WorkSchemeSequenceProps) {
                       ) : null}
                     </figure>
                   ))}
-                </div>
+                </HorizontalTrack>
               </div>
             ) : null}
           </li>
